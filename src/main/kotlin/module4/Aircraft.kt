@@ -12,7 +12,8 @@ open class Aircraft (_numberAirplane:Int,_rangeOfFlight:Double,_tankCapacity:Dou
         tankCapacity=_tankCapacity
     }
 }
-class Boeing747:Aircraft{
-var passengerCapacity:Int =400
+class Boeing747:IPassenger,Aircraft{
+    override var passengerCapacity: Int = 400
     constructor(_numberAirplane: Int,_rangeOfFlight: Double,_tankCapacity: Double) : super(_numberAirplane,_rangeOfFlight,_tankCapacity)
 }
+
