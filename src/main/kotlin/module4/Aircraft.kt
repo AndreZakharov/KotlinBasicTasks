@@ -1,6 +1,6 @@
 package module4
 
-open class Aircraft (_numberAirplane:Int,_rangeOfFlight:Double,_tankCapacity:Double){
+abstract class Aircraft (_numberAirplane:Int,_rangeOfFlight:Double,_tankCapacity:Double){
     var numberAirplane:Int
     var rangeOfFlight:Double
     var tankCapacity:Double
@@ -16,4 +16,3 @@ class Boeing747:IPassenger,Aircraft{
     override var passengerCapacity: Int = 400
     constructor(_numberAirplane: Int,_rangeOfFlight: Double,_tankCapacity: Double) : super(_numberAirplane,_rangeOfFlight,_tankCapacity)
 }
-
